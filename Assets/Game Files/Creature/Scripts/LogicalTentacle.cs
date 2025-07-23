@@ -93,19 +93,27 @@ public class LogicalTentacle : MonoBehaviour
 
         ApplyControllerParameters();
 
-        // --- Initialize attack filter ---
         _attackFilter = new ContactFilter2D();
         _attackFilter.SetLayerMask(attackableLayer);
         _attackFilter.useTriggers = true;
 
+        // The Points array is created here
         Points = new TentaclePoint[segments];
-        // Use the offset to determine the world-space start position.
         Vector2 startPos = body.TransformPoint(AttachmentOffset);
         for (int i = 0; i < segments; i++)
             Points[i] = new TentaclePoint(startPos);
 
         maxTentacleLength = segments * segmentLength * maxStretchMultiplier;
         originalMaxStretchMultiplier = maxStretchMultiplier;
+
+        // CRITICAL FIX: Register the tentacle with the renderer AFTER it's fully initialized.
+        TentacleGpuRenderer.Instance?.Register(this);
+    }
+
+    private void OnDisable()
+    {
+        // Unregister when the object is disabled/pooled to clean up. This is still needed.
+        TentacleGpuRenderer.Instance?.Unregister(this);
     }
 
     private void ApplyControllerParameters()

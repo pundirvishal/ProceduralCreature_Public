@@ -64,8 +64,7 @@ MeshRenderer:
   m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 6466e7aa0d0d9b344bcfceab83d9344a, type: 2}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -129,13 +128,10 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
-  material: {fileID: 2100000, guid: 6466e7aa0d0d9b344bcfceab83d9344a, type: 2}
+  material: {fileID: 0}
   startWidth: 0.3
   endWidth: 0.1
   useCircularCrossSection: 1
-  radialSegments: 2
-  widthSubdivisions: 5
-  lengthSubdivisions: 3
   sortingLayerName: Tentacles
   baseSortingOrder: 5
   grippingSortingBonus: -2

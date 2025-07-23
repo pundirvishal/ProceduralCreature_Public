@@ -1,2 +1,1 @@
-# ProceduralCreature_Public
-This is the public repo for the procedural creature system i created
+This is the git repository for the procedural creature that i created recently. (GPU_Based)
