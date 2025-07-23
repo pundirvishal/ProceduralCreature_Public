@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5482083371442240619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1367640758259018252}
+  - component: {fileID: 7353160746894296243}
+  m_Layer: 0
+  m_Name: LogicalTentacle_Prefab
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1367640758259018252
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5482083371442240619}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.84758, y: 2.84712, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7353160746894296243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5482083371442240619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bd66220d888f2145bae0c945d1bf586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  segments: 20
+  segmentLength: 0.5
+  constraintIterations: 15
+  gravityMultiplier: 0.4
+  maxStretchMultiplier: 1.3
+  reachSpeed: 45
+  idleReachTimeout: 1
+  movingReachTimeout: 1
+  hangDuration: 0.5
+  hangingGravityMultiplier: 8
+  idleDamping: 0.1
+  grippingDamping: 0.15
+  reachingDamping: 0.4
+  attackingDamping: 0.2
+  hangingDamping: 0.25
+  terrainLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  reachDistance: 10
+  searchRadius: 6
+  searchAttemptsPerFrame: 10
+  searchDurationFrames: 2
+  minimumGripDistance: 4
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  obstacleAvoidanceRadius: 1
+  attackRange: 8
+  attackSpeed: 60
+  attackOvershootDistance: 2
+  attackReachBonus: 2
+  attackReachTimeout: 0.4
+  attackSearchTimeout: 0.2
+  attackSearchRadius: 10
+  maxAttackStretchMultiplier: 4
+  attackImpactForce: 5
+  attackableLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  attackImpactRadius: 0.01

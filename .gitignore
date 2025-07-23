@@ -1,0 +1,80 @@
+# Unity generated folders
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/Assets/StreamingAssets/aa*
+/ServerData/
+/Assets/AddressableAssetsData/*/*.bin*
+/Assets/Addressables_Temp*/
+/Assets/AssetStoreTools*
+
+# IDE & editor
+.vs/
+/.idea/
+/*.sln
+*.csproj
+*.user
+*.suo
+*.tmp
+*.booproj
+*.unityproj
+*.pidb
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.DotSettings.user
+*.ncrunch*
+*.cache
+
+# Burst compiler and native libraries
+*.dll
+*.dylib
+*.so
+*.bundle
+
+# Memory and recording captures
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# Crashes, dumps, and auto reports
+sysinfo.txt
+mono_crash.*
+crashlytics-build.properties
+
+# Test artifacts
+InitTestScene*.unity*
+/Assets/InitTestScene*.unity*
+
+# Build output and installables
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.exe
+*.ipa
+*.xcodeproj
+*.xcworkspace
+*.xcuserdata/
+DerivedData/
+
+# JetBrains Rider
+/Assets/Plugins/Editor/JetBrains*
+
+# Visual Scripting auto-generated
+/Assets/Unity.VisualScripting.Generated/
+
+# Blender
+*.blend1
+*.blend1.meta
+
+# Misc
+*.log
+*.DS_Store
+Thumbs.db
+.DS_Store
+*.stackdump
